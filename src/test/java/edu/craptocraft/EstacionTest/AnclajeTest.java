@@ -14,5 +14,11 @@ public class AnclajeTest {
         Assert.assertEquals(444, idBici);
         Assert.assertFalse(anclaje.isOcupado());
     }
-
+    @Test
+    public void anclarBiciTest(){
+        Movil bic = new Bicicleta(444);
+        Anclaje anclaje = new Anclaje(false,bic );
+        anclaje.anclajarBici(bic);
+        Assert.assertTrue(anclaje.isOcupado());
+    }
 }
