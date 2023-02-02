@@ -3,13 +3,10 @@ package edu.craptocraft.estacion;
 import edu.craptocraft.bicicleta.Movil;
 
 public class Anclaje {
-    private boolean ocupado;
-    private Movil bici;
+    private boolean ocupado = false;
+    private Movil bici = null;
 
-    public Anclaje(boolean ocupado, Movil bici) {
-        this.ocupado = ocupado;
-        this.bici = bici;
-    }
+    public Anclaje() {}
     public boolean isOcupado(){
         return this.ocupado;
     }
@@ -19,5 +16,9 @@ public class Anclaje {
     public void anclarBici(Movil bici){
         this.bici = bici;
         this.ocupado = true;
+    }
+    public void liberarBici(){
+        this.bici = null;
+        this.ocupado = false;
     }
 }

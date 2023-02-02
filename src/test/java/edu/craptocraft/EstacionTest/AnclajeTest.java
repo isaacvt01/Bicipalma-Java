@@ -7,18 +7,24 @@ import org.junit.Test;
 
 public class AnclajeTest {
     @Test
-    public void constructorTest(){
+    public void anclarBiciTest(){
         Movil bic = new Bicicleta(444);
-        Anclaje anclaje = new Anclaje(false,bic );
-        int idBici = anclaje.getBici().getId();
-        Assert.assertEquals(444, idBici);
+        Anclaje anclaje = new Anclaje();
+        anclaje.anclarBici(bic);
+        Assert.assertTrue(anclaje.isOcupado());
+    }
+    @Test
+    public void liberarBici(){
+        Movil bic = new Bicicleta(444);
+        Anclaje anclaje = new Anclaje();
+        anclaje.anclarBici(bic);
+        anclaje.liberarBici();
         Assert.assertFalse(anclaje.isOcupado());
     }
     @Test
-    public void anclarBiciTest(){
-        Movil bic = new Bicicleta(444);
-        Anclaje anclaje = new Anclaje(false,bic );
-        anclaje.anclarBici(bic);
-        Assert.assertTrue(anclaje.isOcupado());
+    public void toStringTest(){
+        Anclaje anclaje = new Anclaje();
+        String resultadoEsperado = "¿Anclaje ocupado? false";
+        Assert.assertEquals(resultadoEsperado, anclaje.toString());
     }
 }
