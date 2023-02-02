@@ -1,4 +1,4 @@
 package edu.craptocraft.tarjetausuario;
 
-public class Autenticacion {
+public interface Autenticacion {
 }
