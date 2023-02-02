@@ -4,7 +4,7 @@ package edu.craptocraft;
  * Hello world!
  *
  */
-public class App 
+public class BiciPalma
 {
     public static void main( String[] args )
     {
