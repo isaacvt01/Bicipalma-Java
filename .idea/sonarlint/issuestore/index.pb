@@ -3,8 +3,6 @@
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 d
 4src/main/java/edu/craptocraft/estacion/Estacion.java,6\0\6005aec50f54ff9a621b965617e51d1b7d174752
-d
-4src/main/java/edu/craptocraft/estacion/Anclajes.java,c\4\c40dfb7f28598ba650e08d6a6e1e7b6c734d8e0a
 l
 <src/test/java/edu/craptocraft/EstacionTest/EstacionTest.java,c\b\cbed3b33de78685be9314bf659f4b96d95be829a
 x
