@@ -18,7 +18,7 @@ public class AnclajeTest {
     public void anclarBiciTest(){
         Movil bic = new Bicicleta(444);
         Anclaje anclaje = new Anclaje(false,bic );
-        anclaje.anclajarBici(bic);
+        anclaje.anclarBici(bic);
         Assert.assertTrue(anclaje.isOcupado());
     }
 }
