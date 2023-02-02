@@ -20,6 +20,8 @@ public class AnclajesTest {
     @Test
     public void crearAnclajesTest(){
         Anclaje anclaje = new Anclaje();
-        Assert.assertEquals(anclajes.getAnclaje(0).getClass(), anclaje.getClass());
+        for (int i = 0; i<anclajes.numAnclajes(); i++) {
+            Assert.assertEquals(anclajes.getAnclaje(i).getClass(), anclaje.getClass());
+        }
     }
 }
