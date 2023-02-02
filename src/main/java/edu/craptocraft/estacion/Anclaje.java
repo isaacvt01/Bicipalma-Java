@@ -21,4 +21,10 @@ public class Anclaje {
         this.bici = null;
         this.ocupado = false;
     }
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("¿El anclaje está ocupado? ").append(isOcupado());
+        return sb.toString();
+    }
 }

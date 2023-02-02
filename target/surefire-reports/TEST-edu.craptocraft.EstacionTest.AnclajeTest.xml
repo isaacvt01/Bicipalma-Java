@@ -61,7 +61,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="edu.craptocraft.EstacionTest.AnclajeTest" name="constructorTest" time="0"/>
   <testcase classname="edu.craptocraft.EstacionTest.AnclajeTest" name="anclarBiciTest" time="0"/>
   <testcase classname="edu.craptocraft.EstacionTest.AnclajeTest" name="liberarBici" time="0"/>
+  <testcase classname="edu.craptocraft.EstacionTest.AnclajeTest" name="toStringTest" time="0"/>
 </testsuite>

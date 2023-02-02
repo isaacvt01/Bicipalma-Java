@@ -24,7 +24,7 @@ public class AnclajeTest {
     @Test
     public void toStringTest(){
         Anclaje anclaje = new Anclaje();
-        String resultadoEsperado = "¿Anclaje ocupado? false";
+        String resultadoEsperado = "¿El anclaje está ocupado? false";
         Assert.assertEquals(resultadoEsperado, anclaje.toString());
     }
 }
