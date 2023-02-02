@@ -10,7 +10,9 @@ public class AnclajeTest {
     public void constructorTest(){
         Movil bic = new Bicicleta(444);
         Anclaje anclaje = new Anclaje(false,bic );
-        Assert.assertEquals(444, anclaje.getBici());
-        Assert.assertEquals(false, anclaje.isOcupado());
+        int idBici = anclaje.getBici().getId();
+        Assert.assertEquals(444, idBici);
+        Assert.assertFalse(anclaje.isOcupado());
     }
+
 }
