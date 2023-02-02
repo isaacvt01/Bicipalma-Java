@@ -1,5 +1,6 @@
 package edu.craptocraft.EstacionTest;
 
+import edu.craptocraft.estacion.Anclaje;
 import edu.craptocraft.estacion.Anclajes;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -14,6 +15,11 @@ public class AnclajesTest {
     @Test
     public void ConstructorAnclajesTest() {
         Assert.assertEquals(9, anclajes.numAnclajes());
-    }
 
+    }
+    @Test
+    public void crearAnclajesTest(){
+        Anclaje anclaje = new Anclaje();
+        Assert.assertEquals(anclajes.getAnclaje(0).getClass(), anclaje.getClass());
+    }
 }
