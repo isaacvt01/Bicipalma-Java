@@ -29,7 +29,7 @@ public class Anclajes {
     }
 
     public void ocuparAnclaje(int posicion, Movil bici){
-        if (!anclajes[posicion].isOcupado()){
+        if (!isAnclajeOcupado(posicion)){
             this.anclajes[posicion].anclarBici(bici);
         }
         else{
@@ -47,6 +47,9 @@ public class Anclajes {
         else{
             ;
         }
+    }
+    public boolean isAnclajeOcupado(int poscicion){
+        return this.anclajes[poscicion].isOcupado();
     }
 
 
