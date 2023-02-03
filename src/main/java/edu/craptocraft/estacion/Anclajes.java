@@ -1,5 +1,7 @@
 package edu.craptocraft.estacion;
 
+import edu.craptocraft.bicicleta.Movil;
+
 public class Anclajes {
 
     private final Anclaje[] anclajes;
@@ -15,11 +17,24 @@ public class Anclajes {
         }
     }
 
+
     public Anclaje[] anclajes() {
         return this.anclajes;
     }
     public int numAnclajes(){
         return this.anclajes.length;
+    }
+    public Anclaje getAnclaje(int posicion){
+        return this.anclajes[posicion];
+    }
+
+    public void ocuparAnclaje(int posicion, Movil bici){
+        if (!anclajes[posicion].isOcupado()){
+            this.anclajes[posicion].anclarBici(bici);
+        }
+        else{
+            System.out.println("Anclaje ocupado");
+        }
     }
 
 
