@@ -33,7 +33,16 @@ public class Anclajes {
             this.anclajes[posicion].anclarBici(bici);
         }
         else{
-            System.out.println("Anclaje ocupado");
+            ;
+        }
+    }
+
+    public void liberarAnclaje(int posicion){
+        if (anclajes[posicion].isOcupado()){
+            this.anclajes[posicion].liberarBici();
+        }
+        else{
+            ;
         }
     }
 
