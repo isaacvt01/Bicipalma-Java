@@ -36,6 +36,9 @@ public class Anclajes {
             ;
         }
     }
+    public Movil getBiciAt(int posicion){
+        return this.anclajes[posicion].getBici();
+    }
 
     public void liberarAnclaje(int posicion){
         if (anclajes[posicion].isOcupado()){
