@@ -47,4 +47,10 @@ public class AnclajesTest {
         anclajes.ocuparAnclaje(1, bic);
         Assert.assertEquals(bic, anclajes.getBiciAt(1));
     }
+    @Test
+    public void isAnclajeOcupado(){
+        anclajes.ocuparAnclaje(1, bic);
+        Assert.assertTrue(anclajes.isAnclajeOcupado(1));
+        Assert.assertFalse(anclajes.isAnclajeOcupado(0));
+    }
 }
