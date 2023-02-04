@@ -53,4 +53,10 @@ public class AnclajesTest {
         Assert.assertTrue(anclajes.isAnclajeOcupado(1));
         Assert.assertFalse(anclajes.isAnclajeOcupado(0));
     }
+    @Test
+    public void seleccionarAnclajeTest(){
+        int numero = anclajes.seleccionarAnclaje();
+        int numeroMaximo = anclajes.numAnclajes();
+        Assert.assertTrue(numero > 0 && numero <= numeroMaximo);
+    }
 }
