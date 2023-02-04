@@ -2,6 +2,8 @@ package edu.craptocraft.estacion;
 
 import edu.craptocraft.bicicleta.Movil;
 
+import java.util.Random;
+
 public class Anclajes {
 
     private final Anclaje[] anclajes;
@@ -50,6 +52,11 @@ public class Anclajes {
     }
     public boolean isAnclajeOcupado(int poscicion){
         return this.anclajes[poscicion].isOcupado();
+    }
+    public int seleccionarAnclaje(){
+        Random random = new Random();
+        int anclajeRandom = random.nextInt(numAnclajes());
+        return anclajeRandom;
     }
 
 
