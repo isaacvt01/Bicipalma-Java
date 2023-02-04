@@ -18,10 +18,6 @@ o
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-c
-3src/main/java/edu/craptocraft/estacion/Anclaje.java,c\0\c0629e6a31c32e908e9967c2a8aafd102791e294
-d
-4src/main/java/edu/craptocraft/estacion/Anclajes.java,c\4\c40dfb7f28598ba650e08d6a6e1e7b6c734d8e0a
 n
 >src/test/java/edu/craptocraft/BicicletaTest/BicicletaTest.java,e\3\e380960d00c5f70fb9a949648ce73e953a93ab2e
 k

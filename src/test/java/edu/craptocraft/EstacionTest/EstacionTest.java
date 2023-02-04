@@ -3,15 +3,16 @@ package edu.craptocraft.EstacionTest;
 import edu.craptocraft.bicicleta.Bicicleta;
 import edu.craptocraft.estacion.Anclaje;
 import edu.craptocraft.estacion.Anclajes;
+import edu.craptocraft.estacion.Estacion;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class EstacionTest {
-    Estacion estacion;
-    Anclajes anclajes;
-    Anclaje anclaje;
-    Bicicleta bic;
+    static Estacion estacion;
+    static Anclajes anclajes;
+    static Anclaje anclaje;
+    static Bicicleta bic;
     @BeforeClass
     public static void inicializar(){
         estacion= new Estacion (1, "Manacor", 6);
@@ -23,7 +24,7 @@ public class EstacionTest {
     public void contructorTest(){
         // Se prueba el contructor con el método toString ya que los getters de esta clase son privados.
         String stringEstacion = estacion.toString();
-        String esperado = 'id: 1\ndireccion: Manacor\nnumeroAnclajes: 6';
+        String esperado = "ID: 1\nDireccion: Manacor\nNumero de anclajes: 6";
         Assert.assertEquals(esperado, stringEstacion);
 
     }
