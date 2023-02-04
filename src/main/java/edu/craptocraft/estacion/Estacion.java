@@ -24,4 +24,14 @@ public class Estacion {
         sb.append("ID: ").append(this.id).append("\nDireccion: ").append(this.direccion).append("\nNumero de anclajes: ").append(this.anclajes.numAnclajes());
         return sb.toString();
     }
+    private Anclaje[] anclajes(){
+        return this.anclajes.anclajes();
+    }
+    private int numAnclajes(){
+        return this.anclajes.numAnclajes();
+    }
+    public void consultarEstacion(){
+        System.out.println(this);
+    }
+
 }
