@@ -1,6 +1,7 @@
 package edu.craptocraft.estacion;
 
 import edu.craptocraft.bicicleta.Movil;
+import edu.craptocraft.tarjetausuario.Autenticacion;
 
 public class Estacion {
     private final int id;
@@ -66,6 +67,10 @@ public class Estacion {
             }
         }
         return contadorLibres;
+    }
+
+    public boolean leerTarjetaUsuario(Autenticacion tarjeta){
+        return tarjeta.isActivada();
     }
 
 }
