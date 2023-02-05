@@ -39,7 +39,7 @@ public class Estacion {
 
     private void mostrarAnclaje(Movil bic, int numeroAnclaje){
         numeroAnclaje += 1;
-        System.out.println("Bicicleta: " +bic.getId() + "anclada en el anclaje: " + numeroAnclaje);
+        System.out.println("Bicicleta: " +bic.getId() + " anclada en el anclaje: " + numeroAnclaje);
     }
 
     public void anclarBicicleta(Movil bic){
@@ -76,7 +76,7 @@ public class Estacion {
 
     public void mostrarBicicleta(Movil bic, int numAnclaje){
         numAnclaje += 1;
-        System.out.println("bicicleta retirada: " + bic.getId() + "del anclaje: " + numAnclaje);
+        System.out.println("bicicleta retirada: " + bic.getId() + " del anclaje: " + numAnclaje);
     }
     public void retirarBicicleta(Autenticacion tarjetaUsuario){
         if(leerTarjetaUsuario(tarjetaUsuario)){
@@ -90,6 +90,16 @@ public class Estacion {
                 }else{
                     ;
                 }
+            }
+        }
+    }
+
+    public void consultarAnclajes(){
+        for (int i = 0; i<anclajes.numAnclajes(); i++){
+            if (anclajes.isAnclajeOcupado(i)){
+                System.out.println("Anclaje " + (i+1) + " " + anclajes.getBiciAt(i));
+            }else{
+                System.out.println("Anclaje " + (i+1) + " libre");
             }
         }
     }
