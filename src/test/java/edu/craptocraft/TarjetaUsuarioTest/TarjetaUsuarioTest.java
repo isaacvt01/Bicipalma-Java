@@ -16,5 +16,15 @@ public class TarjetaUsuarioTest {
     @Test
     public void isactivadaTest(){
         Assert.assertTrue(tarjeta.isActivada());
+        tarjeta.setActivada(false);
+        Assert.assertFalse(tarjeta.isActivada());
     }
+    @Test
+    public void toStringTest(){
+        String resultado = "234";
+        String tarjetaString = tarjeta.toString();
+        Assert.assertEquals(resultado, tarjetaString);
+
+    }
+
 }
