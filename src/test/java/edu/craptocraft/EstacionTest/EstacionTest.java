@@ -15,6 +15,8 @@ public class EstacionTest {
     static Anclaje anclaje;
     static Bicicleta bic;
 
+    static TarjetaUsuario
+
     static TarjetaUsuario tarjeta;
     @BeforeClass
     public static void inicializar(){
@@ -23,6 +25,7 @@ public class EstacionTest {
         anclaje = new Anclaje();
         bic = new Bicicleta(898);
         tarjeta = new TarjetaUsuario("222", true);
+        tarjetaNoActivada = new TarjetaUsuario("333", false);
     }
     @Test
     public void contructorTest(){
@@ -44,6 +47,13 @@ public class EstacionTest {
         Assert.assertTrue(estacion.leerTarjetaUsuario(tarjeta));
         tarjeta.setActivada(false);
         Assert.assertFalse(estacion.leerTarjetaUsuario(tarjeta));
+    }
+    @Test
+    public void retirarBicicletaTest(){
+        estacion.anclarBicicleta(bic);
+        Assert.assertEquals(estacion.anclajesLibres(), 5);
+        estacion.retirarBicicleta(tarjeta);
+        Assert.assertEquals(estacion.anclajesLibres(), 6);
     }
 
 
