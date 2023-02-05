@@ -50,8 +50,8 @@ public class Anclajes {
             ;
         }
     }
-    public boolean isAnclajeOcupado(int poscicion){
-        return this.anclajes[poscicion].isOcupado();
+    public boolean isAnclajeOcupado(int posicion){
+        return this.anclajes[posicion].isOcupado();
     }
     public int seleccionarAnclaje(){
         Random random = new Random();

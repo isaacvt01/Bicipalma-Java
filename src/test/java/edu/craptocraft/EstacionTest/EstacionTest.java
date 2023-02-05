@@ -1,6 +1,7 @@
 package edu.craptocraft.EstacionTest;
 
 import edu.craptocraft.bicicleta.Bicicleta;
+import edu.craptocraft.bicicleta.Movil;
 import edu.craptocraft.estacion.Anclaje;
 import edu.craptocraft.estacion.Anclajes;
 import edu.craptocraft.estacion.Estacion;
@@ -13,9 +14,9 @@ public class EstacionTest {
     static Estacion estacion;
     static Anclajes anclajes;
     static Anclaje anclaje;
-    static Bicicleta bic;
+    static Movil bic;
 
-    static TarjetaUsuario
+    static TarjetaUsuario tarjetaNoActivada;
 
     static TarjetaUsuario tarjeta;
     @BeforeClass
@@ -51,9 +52,9 @@ public class EstacionTest {
     @Test
     public void retirarBicicletaTest(){
         estacion.anclarBicicleta(bic);
-        Assert.assertEquals(estacion.anclajesLibres(), 5);
+        Assert.assertEquals(estacion.anclajesLibres(), 4);
         estacion.retirarBicicleta(tarjeta);
-        Assert.assertEquals(estacion.anclajesLibres(), 6);
+        Assert.assertEquals(estacion.anclajesLibres(), 5);
     }
 
 
