@@ -1,5 +1,7 @@
 package edu.craptocraft.estacion;
 
+import edu.craptocraft.bicicleta.Movil;
+
 public class Estacion {
     private final int id;
     private final String direccion;
@@ -34,5 +36,36 @@ public class Estacion {
         System.out.println(this);
     }
 
+    private void mostrarAnclaje(Movil bic, int numeroAnclaje){
+        System.out.println("Bicicleta: " +bic.getId() + "anclada en el anclaje: " + numeroAnclaje);
+    }
+
+    public void anclarBicicleta(Movil bic){
+        boolean isAnclada = false;
+        int i = 0;
+        while (!isAnclada){
+            if(!this.anclajes.getAnclaje(i).isOcupado()){
+                this.anclajes.getAnclaje(i).anclarBici(bic);
+                isAnclada = true;
+                mostrarAnclaje(bic, i);
+            }else{
+                ;
+            }
+            i++;
+        }
+    }
+
+    public int anclajesLibres(){
+        int contadorLibres = 0;
+        for (int i=0; i<anclajes.numAnclajes(); i++){
+            if (!this.anclajes.getAnclaje(i).isOcupado()){
+                contadorLibres += 1;
+            }
+            else {
+                ;
+            }
+        }
+        return contadorLibres;
+    }
 
 }
