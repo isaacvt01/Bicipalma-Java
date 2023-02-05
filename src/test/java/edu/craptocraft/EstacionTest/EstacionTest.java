@@ -28,6 +28,13 @@ public class EstacionTest {
         Assert.assertEquals(esperado, stringEstacion);
 
     }
+    @Test
+    public void anclarBicicletaTest(){
+        //En este test se prueban los métodos anclarBicicleta y anclajesLibres.
+        estacion.anclarBicicleta(bic);
+        Assert.assertEquals(estacion.anclajesLibres(), 8);
+    }
+
 
 
 }
