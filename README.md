@@ -14,6 +14,7 @@ El propósito de este kata es obtener experiencia con:
 - Interpretación de diagramas UML
 - Principios SOLID
 - POO
+- Loops
 
 Además de lo mencionado anteriormente, utilizo este kata para practicar streams.
 
