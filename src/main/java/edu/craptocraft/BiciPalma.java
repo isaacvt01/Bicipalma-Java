@@ -1,4 +1,4 @@
-package appalma;
+package edu.craptocraft;
 
 import edu.craptocraft.bicicleta.Bicicleta;
 import edu.craptocraft.bicicleta.Movil;
